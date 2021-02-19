@@ -12,4 +12,8 @@ public interface CommentRepository extends CrudRepository<Comment, String>{
 
     List<Comment> findAll();
     
+    List<Comment> findByParentIdAndId(String parentId, String id);
+
+	List<Comment> findByParentId(String parentId);
+    
 }

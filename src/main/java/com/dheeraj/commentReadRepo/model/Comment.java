@@ -13,7 +13,7 @@ import lombok.Data;
 @Table(value = "testComment")
 public class Comment {
 
-    @PrimaryKeyColumn(name = "id", ordinal = 2, type = PrimaryKeyType.CLUSTERED)
+    @PrimaryKeyColumn(name = "id", ordinal = 1, type = PrimaryKeyType.CLUSTERED)
     private String id;
 
     @Column("text")
@@ -37,7 +37,7 @@ public class Comment {
     @Column("c_by")
     private String createdBy;
 
-    @PrimaryKeyColumn(name = "c_on", ordinal = 1, type = PrimaryKeyType.CLUSTERED)
+    @PrimaryKeyColumn(name = "c_on", ordinal = 2, type = PrimaryKeyType.CLUSTERED)
     private Date createdOn;
 
     @Column("edit")
