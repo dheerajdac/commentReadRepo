@@ -1,8 +1,5 @@
 package com.dheeraj.commentReadRepo.controller;
 
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.CharsetDecoder;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,11 +9,9 @@ import com.dheeraj.commentReadRepo.model.PaginatedCommentResponse;
 import com.dheeraj.commentReadRepo.repository.CommentCustomReadRepo;
 import com.dheeraj.commentReadRepo.repository.CommentRepository;
 
-import org.codehaus.jackson.util.ByteArrayBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.cassandra.core.query.CassandraPageRequest;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

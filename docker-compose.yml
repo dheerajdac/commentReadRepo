@@ -16,8 +16,11 @@ services:
     environment:
       - PROFILE=production
     networks:
+      - commentReadRepo
       - cassandra
 networks:
+  commentReadRepo:
+    name: commentReadRepo
   cassandra :
     external:
       name: cassandra
