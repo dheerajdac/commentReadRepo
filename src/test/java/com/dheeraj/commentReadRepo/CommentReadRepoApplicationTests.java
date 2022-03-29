@@ -3,10 +3,10 @@ package com.dheeraj.commentReadRepo;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class CommentReadRepoApplicationTests {
 
-	@Test
+	//@Test
 	void contextLoads() {
 	}
 

@@ -1,11 +1,16 @@
 server:
-  port: 9042
+  port: 9998
 spring:
   application:
     name: commentReadRepo
   data:
       cassandra:
         local-datacenter: datacenter1
-        keyspace-name: uts
-        contact-points: cass1
+        keyspace-name: comment
+        contact-points: 
+          - cassandra
         port: 9042
+        schema-action: CREATE_IF_NOT_EXISTS
+logging:
+  file:
+    name: console.log
