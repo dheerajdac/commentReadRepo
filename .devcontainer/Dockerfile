@@ -1,1 +1,1 @@
-FROM dheerajdac/ubuntu:java-11
+FROM dheerajdac/ubuntu:java-17

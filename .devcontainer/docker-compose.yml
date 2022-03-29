@@ -44,5 +44,4 @@ networks:
   commentReadRepo:
     name: commentReadRepo
   cassandra :
-    external:
-      name: cassandra
+    name: cassandra
