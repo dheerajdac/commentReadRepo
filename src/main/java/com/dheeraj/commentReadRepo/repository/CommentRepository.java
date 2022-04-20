@@ -1,6 +1,7 @@
 package com.dheeraj.commentReadRepo.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.dheeraj.commentReadRepo.model.Comment;
 
@@ -13,6 +14,8 @@ import org.springframework.stereotype.Repository;
 public interface CommentRepository extends CrudRepository<Comment, String>{
 
     List<Comment> findAll();
+
+    Optional<Comment> findById(String id);
     
     List<Comment> findByParentIdAndId(String parentId, String id);
 
